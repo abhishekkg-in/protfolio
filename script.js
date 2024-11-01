@@ -38,3 +38,66 @@ window.onscroll = function () {
 scrollToTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// Experience ========================
+
+const descriptions = {
+  ltimindtree: `
+  <div class="header">
+            Software Engineer
+            <span class="organization">@ LTIMindtree</span>
+          </div>
+          <div class="date">September 2022 - Present</div>
+<div class="description">
+  <ul>
+    <li>
+      Developed and styled interactive web applications for Apple
+      Music using Ember and SCSS.
+    </li>
+    <li>
+      Built and shipped the Apple Music Extension for Facebook
+      Messenger leveraging third-party and internal API integrations.
+    </li>
+    <li>
+      Architected and implemented the user interface of Apple Music's
+      embeddable web player widget for in-browser user authorization
+      and full song playback.
+    </li>
+    <li>
+      Contributed extensively to the creation of MusicKit JS, a
+      public-facing JavaScript SDK for embedding Apple Music players
+      into web applications.
+    </li>
+  </ul>
+</div>
+  `,
+  mindtree: `
+  <div class="header">
+  MERN Stack Intern
+  <span class="organization">@ Mindtree</span>
+</div>
+<div class="date">March - June 2022</div>
+<div class="description">
+  <ul>
+    <li>
+      Developed and styled interactive web applications for Apple
+      Music using Ember and SCSS.
+    </li>
+    <li>
+      Built and shipped the Apple Music Extension for Facebook
+      Messenger leveraging third-party and internal API integrations.
+    </li>
+  </ul>
+</div>
+  `,
+};
+
+function showDescription(company) {
+  document.getElementById("work-description").innerHTML = descriptions[company];
+  document.querySelectorAll(".company-item").forEach((item) => {
+    item.classList.remove("active");
+  });
+  document
+    .querySelector(`.company-item[onclick="showDescription('${company}')"]`)
+    .classList.add("active");
+}
