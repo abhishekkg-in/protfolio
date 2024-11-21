@@ -469,6 +469,7 @@ html {
     padding: 2rem;
     border-radius: 4px;
     transition: transform .3s;
+    max-width: 100%;
   }
 
   #projects .project-container .card:hover{
@@ -515,6 +516,7 @@ html {
 
   #projects .project-container .card .technology-used{
     margin: 1rem 0rem;
+    overflow: auto;
   }
 
   #projects .project-container .card .technology-used ul {
@@ -522,6 +524,7 @@ html {
     display: flex;
     float: left;
     gap: .5rem;
+    
   }
 
   #projects .project-container .card .technology-used ul li {
@@ -969,6 +972,15 @@ html {
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
+
+
+  /* Projects ============== */
+
+  #projects .project-container .card .technology-used ul li{
+    font-size: .5rem;
+  }
+
+
   
   
 
