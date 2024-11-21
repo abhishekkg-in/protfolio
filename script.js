@@ -51,22 +51,19 @@ const descriptions = {
 <div class="description">
   <ul>
     <li>
-      Developed and styled interactive web applications for Apple
-      Music using Ember and SCSS.
+    Designed an intuitive frontend using Vue.js, enabling operations
+    engineers to analyze ITSM tickets with insightful charts and AI/ML
+    recommendations. Implemented utilization notifications to enhance
+    operational efficiency.
     </li>
     <li>
-      Built and shipped the Apple Music Extension for Facebook
-      Messenger leveraging third-party and internal API integrations.
+    Developed and integrated a user-friendly interface using Vue.js,
+enhancing the chatbot’s functionality and user experience.
     </li>
     <li>
-      Architected and implemented the user interface of Apple Music's
-      embeddable web player widget for in-browser user authorization
-      and full song playback.
-    </li>
-    <li>
-      Contributed extensively to the creation of MusicKit JS, a
-      public-facing JavaScript SDK for embedding Apple Music players
-      into web applications.
+    Led the creation of a manual notification UI using Vue.js, enhancing
+    user interaction and experience. Facilitated the integration of frontend and backend APIs, ensuring
+    seamless communication between services.
     </li>
   </ul>
 </div>
@@ -80,12 +77,12 @@ const descriptions = {
 <div class="description">
   <ul>
     <li>
-      Developed and styled interactive web applications for Apple
-      Music using Ember and SCSS.
+    Developed a comprehensive trip booking application using React for the
+    frontend, Node.js and Express for the backend and MongoDB for database
+    management
     </li>
     <li>
-      Built and shipped the Apple Music Extension for Facebook
-      Messenger leveraging third-party and internal API integrations.
+    <b>Technology used: </b> React.jS, javascript, Node.js, REST API, Express.js, JWT
     </li>
   </ul>
 </div>
@@ -126,5 +123,9 @@ function handleCancelClick(){
   nav.style.display = "none";
   view.style.display = "block";
   cancel.style.display = "none";
+}
+
+function redirect(url){
+  window.location.href = url;
 }
 
