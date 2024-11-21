@@ -855,12 +855,14 @@ html {
   }
 
   header nav a {
-    padding: 0.4em 0.8em;
+    padding: 1em 0.8em;
     font-size: 0.9rem;
   }
 
   .resume-btn {
+    margin-top: 1rem;
     padding: 0.4em 0.8em;
+    margin-bottom: 2em;
     font-size: 0.9rem;
   }
 

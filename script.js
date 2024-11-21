@@ -125,6 +125,15 @@ function handleCancelClick(){
   cancel.style.display = "none";
 }
 
+function closeNavbar(){
+  let width = screen.width;
+  console.log("width ->>", width);
+  if (width < 768){
+    console.log("got it ");
+    handleCancelClick()
+  }
+}
+
 function redirect(url){
   window.location.href = url;
 }
