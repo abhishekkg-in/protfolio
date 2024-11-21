@@ -101,3 +101,30 @@ function showDescription(company) {
     .querySelector(`.company-item[onclick="showDescription('${company}')"]`)
     .classList.add("active");
 }
+
+
+function handleViewClick(){
+  console.log("view clicked...")
+
+  const nav = document.getElementById("nav");
+  const view = document.getElementById("view")
+  const cancel = document.getElementById("cancel")
+
+  nav.style.display = "contents";
+  view.style.display = "none";
+  cancel.style.display = "block";
+
+}
+
+function handleCancelClick(){
+  console.log("cancel clicked...")
+
+  const nav = document.getElementById("nav");
+  const view = document.getElementById("view")
+  const cancel = document.getElementById("cancel")
+
+  nav.style.display = "none";
+  view.style.display = "block";
+  cancel.style.display = "none";
+}
+

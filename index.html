@@ -9,8 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=folder" />
   </head>
   <body>
+
+    <!-- HEADER ============================================================ -->
+
     <header id="navbar">
       <div class="header-content">
         <!-- <p>A</p> -->
@@ -46,17 +50,29 @@
           </a>
         </p>
       </div>
-      <nav>
+      <nav id="nav"> 
         <a href="#about">About</a>
+        <a href="#technology">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="./data/Resume_frontend.pdf" download class="resume-btn"
           >Download Resume</a
         >
       </nav>
+      <div class="nav-button">
+        <div class="view" id="view">
+          <i class="fa-solid fa-bars" onclick="handleViewClick()"></i>
+        </div>
+        <div class="cancel" id="cancel">
+          <i class="fa-solid fa-xmark" onclick="handleCancelClick()"></i>
+        </div>
+      </div>
     </header>
 
+    
+
+    <!-- LEFT SIDEBAR ============================================================ -->
     <div class="left-sidebar">
       <div class="social">
         <div title="Github" class="social-icon">
@@ -79,11 +95,15 @@
       <div class="line"></div>
     </div>
 
+
+    <!-- RIGHT SIDEBAR ============================================================ -->
     <div class="right-sidebar">
       <div class="email">abhishekravi718@gmail.com</div>
       <div class="right-line"></div>
     </div>
 
+
+    <!-- GO-UP BUTTON ============================================================ -->
     <div class="go-up">
       <button class="scroll-to-top" id="scrollToTopBtn">
         ☝️
@@ -91,33 +111,10 @@
       </button>
     </div>
 
-    <!-- <section id="top" style="height: 5vh">
-      <svg
-        id="logo"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        viewBox="0 0 84 96"
-      >
-        <title>Logo</title>
-        <g transform="translate(-8.000000, -2.000000)">
-          <g transform="translate(11.000000, 5.000000)">
-            <polygon
-              id="Shape"
-              stroke="currentColor"
-              stroke-width="5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              points="39 0 0 22 0 67 39 90 78 68 78 23"
-            ></polygon>
-            <path
-              d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-              fill="currentColor"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </section> -->
+   
 
+
+    <!-- INFO ============================================================ -->
     <section id="info" class="section">
       <div class="title">Hi, my name is</div>
       <div class="header">Abhishek Gupta</div>
@@ -134,6 +131,9 @@
       </p>
     </section>
 
+
+
+    <!-- ABOUT ============================================================ -->
     <section id="about" class="section">
       <div class="header">
         <div class="start">01.</div>
@@ -148,9 +148,9 @@
             full-stack development and a proven track record of delivering
             impactful solutions.
           </p>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <!-- <p class="para">Here are a few technologies I’ve been working with recently:</p> -->
           <br />
-          <ul>
+          <!-- <ul>
             <li>Javascript</li>
             <li>Java</li>
             <li>Python</li>
@@ -162,7 +162,7 @@
             <li>ArangoDB</li>
             <li>MySQL</li>
             <li>PostgreSQL</li>
-          </ul>
+          </ul> -->
         </div>
         <div class="image">
           <img src="./data/me.jpg" alt="Image_Abhishek_Gupta" />
@@ -174,9 +174,65 @@
       <!-- <p>I am a software engineer with expertise in Python, GenAI, and full stack development. Currently working at LTIMindtree, I have experience in Vue.js, Spring Boot, and various tech stacks that I utilize to deliver optimized solutions.</p> -->
     </section>
 
-    <section id="experience" class="section">
+
+
+    <!-- SKILLS / TECHNOLOGY ============================================================ -->
+    <section id="technology" class="section">
       <div class="header">
         <div class="start">02.</div>
+        <div class="title">technologies I’ve been working with recently</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="technology">
+        <div class="programming-languages">
+          <h3>💻 Programming Languages</h3>
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+          <!-- <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/> -->
+          <!-- <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/> -->
+          <!-- <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js"/>
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/> -->
+          <!-- <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/> -->
+          <!-- <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/> -->
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+          <img src="https://img.shields.io/badge/ArangoDB-DDE072?style=for-the-badge&logo=arangodb&logoColor=black" alt="ArangoDB"/>
+          <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+        </div>
+
+        <div class="cloud">
+          <h3>☁️ Cloud Technologies</h3>
+          <!-- <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="AWS"/> -->
+          <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
+          <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP"/>
+        </div>
+
+        <div class="frameworks">
+          <h3>🔧 Frameworks</h3>
+          <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+          <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js"/>
+          <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm"/>
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+          <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
+          <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/>
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+          <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Visual Studio Code"/>
+          <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+          <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
+          <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- EXPERIENCE ============================================================ -->
+    <section id="experience" class="section">
+      <div class="header">
+        <div class="start">03.</div>
         <div class="title">Where I've Worked</div>
         <div class="line"></div>
       </div>
@@ -225,48 +281,98 @@
       </div>
     </section>
 
-    
-    <!-- <section id="projects" class="section">
-      <h2>Where I'have Worked</h2>
-      <div class="project">
-        <h3>Multi-Tenant ITSM Ticket Analysis Application</h3>
-        <p>
-          Developed an intuitive front end using Vue.js, enhancing operational
-          efficiency with AI/ML recommendations.
-        </p>
-        <p>
-          <strong>Technologies:</strong> Vue.js, Spring Boot, REST API, Azure
-        </p>
-      </div>
-      <div class="project">
-        <h3>Document Entity Extraction</h3>
-        <p>
-          Reduced manual effort by 70% through integration of the Mistral LLM
-          model for a top insurance client.
-        </p>
-        <p><strong>Technologies:</strong> Vue.js, Mistral LLM, Python, Flask</p>
-      </div>
-      <div class="project">
-        <h3>Notification Management Application</h3>
-        <p>
-          Enhanced UI experience for notification management, deploying on
-          Kubernetes for scalability.
-        </p>
-        <p><strong>Technologies:</strong> Vue.js, Kubernetes, Docker</p>
-      </div>
-    </section> -->
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python, Java</li>
-        <li>React, Vue.js, Node.js</li>
-        <li>REST API, PostgreSQL, MongoDB</li>
-        <li>Azure, GCP, Docker, Kubernetes</li>
-      </ul>
+    
+    <!-- PROJECTS ============================================================ -->
+    <section id="projects" class="section">
+      <div class="header">
+        <div class="start">04.</div>
+        <div class="title">Projects</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="project-container">
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i class="fa-brands fa-github icon"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square icon"></i>
+            </div>
+          </div>
+          <div class="header">
+            Building a Headless Mobile App CMS From Scratch
+          </div>
+          <div class="description">
+            Time to Have More Fun
+            A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i class="fa-brands fa-github icon"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square icon"></i>
+            </div>
+          </div>
+          <div class="header">
+            Building a Headless Mobile App CMS From Scratch
+          </div>
+          <div class="description">
+            Time to Have More Fun
+            A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i class="fa-brands fa-github icon"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square icon"></i>
+            </div>
+          </div>
+          <div class="header">
+            Building a Headless Mobile App CMS From Scratch
+          </div>
+          <div class="description">
+            Time to Have More Fun
+            A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li >Next.js</li>
+              <li class="mlr">Tailwind CSS</li>
+              <li class="mlr">Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
+
+
+    <!-- CONTACT ============================================================ -->
     <section id="contact" class="section">
       <div class="title">What's next?</div>
       <div class="header">Get In Touch</div>
@@ -282,9 +388,12 @@
       </div>
     </section>
 
+
+    <!-- FOOTER ============================================================ -->
     <footer>
       <p>&copy; 2024 Abhishek Kumar Gupta</p>
     </footer>
+
 
     <script src="./script.js"></script>
   </body>

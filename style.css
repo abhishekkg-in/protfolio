@@ -46,6 +46,34 @@ html {
     padding: .2rem 2rem;
     transition: top 0.3s;
   }
+
+  .nav-button{
+    display: none;
+    color: white;
+    z-index: 1000;
+    font-size: 2rem;
+  }
+
+  .nav-button:hover{
+    cursor: pointer;
+  }
+
+  .nav-button .view{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    /* display: none; */
+
+  }
+
+  .nav-button .cancel{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+
    
   .header-content {
     font-size: 1.5rem;
@@ -179,10 +207,6 @@ html {
     color: #a8b2d1;
   }
 
-  .left-sidebar .social{
-    
-  }
-
   .left-sidebar .social .social-icon{
     padding: 10px 0px;
   }
@@ -299,6 +323,11 @@ html {
     line-height: 22px;
   }
 
+  #about .para-image .para-text ul li {
+    /* list-style: none; */
+    color: #8892b0;
+  }
+
   #about .para-image{
     height: auto;
 
@@ -350,6 +379,166 @@ html {
     height: 240px;
     border-radius: 4px; */
   }
+
+  /* ================== Technology ================ */
+  #technology{
+    width: 60%;
+    margin-bottom: 3rem;
+  }
+
+  #technology .header{
+    display: flex;
+    width: 100%;
+  }
+  
+  #technology .header .start{
+    color: #64ffda;
+  }
+
+  #technology .header .title{
+    min-width: 20px;
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: -5px;
+    color: rgb(204 214 246);
+  }
+
+  #technology .header .line {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 20px;
+    border-top: 2px solid #233554;
+  }
+
+  #technology .technology{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #technology .technology h3{
+    color: #64ffda;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  /* ========= Projects ============= */
+
+  #projects{
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  #projects .header{
+    display: flex;
+    width: 100%;
+  }
+
+  #projects .header .start{
+    color: #64ffda;
+  }
+
+  #projects .header .title{
+    min-width: 20px;
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: -5px;
+    color: rgb(204 214 246);
+  }
+
+  #projects .header .line {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 20px;
+    border-top: 2px solid #233554;
+  }
+
+  #projects .project-container{
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  #projects .project-container .card{
+    background-color: #112240;
+    flex: 1 1 13rem;
+    padding: 2rem;
+    border-radius: 4px;
+    transition: transform .3s;
+  }
+
+  #projects .project-container .card:hover{
+    cursor: pointer;
+    transform: translate(0rem, -.5rem);
+  }
+
+  #projects .project-container .card .header-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #projects .project-container .card .header-icons .left-icons{
+    font-size: 2rem;
+  }
+
+  #projects .project-container .card .header-icons .right-icons .icon{
+    color: #ccd6f6;
+    margin: 0rem .1rem;
+  }
+
+  #projects .project-container .card .header-icons .right-icons .icon:hover{
+    color: #64ffda;
+  }
+
+  #projects .project-container .card .header{
+    color: #ccd6f6;
+    font-size: 1.2rem;
+    margin: 1rem 0rem .5rem 0rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+  }
+
+  #projects .project-container .card .header:hover{
+    color: #64ffda;
+  }
+
+  #projects .project-container .card .description{
+    color: #9d9d9e;
+    font-size: .9rem;
+    line-height: 1.3rem;
+  }
+
+  #projects .project-container .card .technology-used{
+    margin: 1rem 0rem;
+  }
+
+  #projects .project-container .card .technology-used ul {
+    list-style: none;
+    display: flex;
+    float: left;
+    gap: .5rem;
+  }
+
+  #projects .project-container .card .technology-used ul li {
+    color: #8892b0;
+    font-size: .7rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* #projects .project-container .card .technology-used ul .mlr{
+    margin: 0rem 2rem;
+  } */
+
+
+
+
+
+
 
   /* ========= Experience ============ */
 
@@ -618,9 +807,37 @@ html {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   /* Header adjustments */
+  .nav-button{
+    color: white;
+    z-index: 1000;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .nav-button:hover{
+    cursor: pointer;
+  }
+
+  .nav-button .view{
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    /* display: none; */
+    display: block;
+
+  }
+
+  .nav-button .cancel{
+    /* display: block; */
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+  }
   header {
     padding: 0.5rem;
     flex-direction: column;
+    transition:  .4s;
   }
 
   .header-content {
@@ -628,6 +845,8 @@ html {
   }
 
   header nav {
+    display: none;
+    /* display:contents; */
     flex-direction: column;
     gap: 0.5em;
   }
@@ -644,6 +863,10 @@ html {
 
   /* Section width adjustments */
   .section {
+    min-height: 70vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-content: center;
     width: 90vw;
     padding: 1em;
     margin: 1em auto;
@@ -656,7 +879,11 @@ html {
 
   /* About section adjustments */
   #about {
-    width: 90%;
+    width: 95%;
+  }
+
+  #about .header{
+    width: 100%;
   }
 
   #about .header .title {
@@ -664,7 +891,7 @@ html {
   }
 
   #about .header .line {
-    width: 50%;
+    width: 55%;
   }
 
   #about .para {
@@ -676,13 +903,80 @@ html {
     align-items: center;
   }
 
+  #about .para-image .image::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* width: 100%;
+    height: 100%; */
+    width: 290px;
+    height: 350px;
+    margin-top: 32px;
+    margin-left: -32px;
+    /* background-color: #64ffda; */
+    border: 2px solid #64ffda;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    opacity: 1;
+    border-radius: 5px;
+  }
+
+  #about .para-image .image img{
+    margin-top: 35px;
+    margin-left: -30px;
+    width: 290px;
+    height: 350px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    border-radius: 4px;
+    transition: transform 0.4s ease;
+  }
+
+  #about .para-image .image img:hover{
+    transform: translate(-6px, -6px);
+    filter: grayscale(0%);
+    /* margin-top: 30px;
+    margin-left: -35px;
+    width: 210px;
+    height: 240px;
+    border-radius: 4px; */
+  }
+
   #about .para-image .image {
     margin: 0;
   }
 
+  /* technology section =========================== */
+  #technology{
+    width: 95%;
+  }
+
+  #technology .header{
+    display: flex;
+    width: 100%;
+  }
+
+  #technology .technology{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #technology .technology h3{
+    color: #64ffda;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+
+
+
   /* Experience section adjustments */
   #experience {
-    width: 90%;
+    width: 95%;
   }
 
   #experience .header .title {
@@ -698,13 +992,61 @@ html {
   }
 
   #experience .work .worklist {
+    display: flex;
+    flex-direction: row;
     width: 100%;
   }
 
+  .company-item {
+    padding: 15px;
+    cursor: pointer;
+    border-left: none;
+    border-bottom: 2px solid rgb(35 53 84);
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 2rem;
+  }
+
+  .company-item:hover,
+  .company-item.active {
+        /* background-color: #3a3a3a; */
+        color: rgb(100 255 218);
+        /* border-color: rgb(100 255 218); */
+        border-radius: 1px;
+  }
+
+  #experience .work-description {
+    /* margin-left: 25px; */
+    width: 90%;
+  }
+
+
   /* Sidebar adjustments */
-  .left-sidebar, .right-sidebar {
+  .right-sidebar {
     display: none;
   }
+
+  .left-sidebar{
+    /* border: 2px solid yellow; */
+    align-items: center;
+    position:sticky;
+    top: 100rem;
+    margin-bottom: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-sidebar .social{
+    display: flex;
+    gap: 2rem;
+    
+  }
+
+  .left-sidebar .line{
+    display: none;
+  }
+
+
 
   /* Contact section adjustments */
   #contact {
@@ -714,15 +1056,17 @@ html {
   #contact .header {
     font-size: 32px;
   }
+}
 
-  .button-wrapper {
-    width: 100%;
+@media (min-width: 768px) {
+
+  header nav {
+    /* display: none; */
+    display:block;
+    flex-direction: column;
+    gap: 0.5em;
   }
 
-  #contact .button {
-    width: 100%;
-    height: 50px;
-  }
 }
 
 /* Additional adjustments for very small screens (e.g., 480px) */
