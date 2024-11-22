@@ -135,6 +135,7 @@ function closeNavbar(){
 }
 
 function redirect(url){
-  window.location.href = url;
+  window.open(url, "_blank")
+  // window.location.href = url;
 }
 
