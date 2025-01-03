@@ -51,19 +51,23 @@ const descriptions = {
 <div class="description">
   <ul>
     <li>
-    Designed an intuitive frontend using Vue.js, enabling operations
-    engineers to analyze ITSM tickets with insightful charts and AI/ML
-    recommendations. Implemented utilization notifications to enhance
-    operational efficiency.
+    Designed an intuitive frontend with Vue.js for operations engineers 
+    to analyze ITSM tickets using insightful charts and AI/ML recommendations. 
+    Enhanced operational efficiency with utilization notifications and backend 
+    integration via Spring Boot and REST APIs.
     </li>
     <li>
-    Developed and integrated a user-friendly interface using Vue.js,
-enhancing the chatbot’s functionality and user experience.
+    Developed a scalable and reliable notification system for a multi-tenant environment, 
+    leveraging Spring Boot, Kubernetes, and Docker. 
+    Designed a cohesive UI with Vue.js for manual notifications.
     </li>
     <li>
-    Led the creation of a manual notification UI using Vue.js, enhancing
-    user interaction and experience. Facilitated the integration of frontend and backend APIs, ensuring
-    seamless communication between services.
+    Developed a chatbot with document summarization, allowing users to upload images, 
+    PDFs, and DOCs for summarization and chat interactions.
+    </li>
+    <li>
+    Built a document comparator app to detect and highlight differences between 
+    two documents using GenAI and Spring Boot.
     </li>
   </ul>
 </div>
@@ -77,12 +81,16 @@ enhancing the chatbot’s functionality and user experience.
 <div class="description">
   <ul>
     <li>
-    Developed a comprehensive trip booking application using React for the
-    frontend, Node.js and Express for the backend and MongoDB for database
-    management
+    Built a scalable e-commerce platform with product catalog, user
+    authentication, and secure payment integrationusing Stripe API.
     </li>
     <li>
-    <b>Technology used: </b> React.jS, javascript, Node.js, REST API, Express.js, JWT
+    Developed a real-time task management app with role-based access
+ control and dynamic dashboards.
+    </li>
+    <li>
+    Created a social networking app with profiles, posts, comments,
+ media uploads, and real-time chat.
     </li>
   </ul>
 </div>
