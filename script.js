@@ -51,6 +51,10 @@ const descriptions = {
 <div class="description">
   <ul>
     <li>
+      Built a Data Entity Extraction chatbot with Mistral LLM, reducing
+      manual effort by 70% and cutting costs.
+    </li>
+    <li>
     Designed an intuitive frontend with Vue.js for operations engineers 
     to analyze ITSM tickets using insightful charts and AI/ML recommendations. 
     Enhanced operational efficiency with utilization notifications and backend 
