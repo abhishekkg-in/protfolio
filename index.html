@@ -54,14 +54,13 @@
         </p>
       </div>
       <nav id="nav">
-        <a href="#about" onclick="closeNavbar()">About</a>
-        <a href="#technology" onclick="closeNavbar()">Skills</a>
-        <a href="#experience" onclick="closeNavbar()">Experience</a>
-        <a href="#projects" onclick="closeNavbar()">Projects</a>
-        <a href="#contact" onclick="closeNavbar()">Contact</a>
+        <a href="#about">About</a>
+        <a href="#technology">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <a
           href="./data/Resume_Full_stack.pdf"
-          onclick="closeNavbar()"
           download
           class="resume-btn"
           >Download Resume</a
@@ -69,10 +68,20 @@
       </nav>
       <div class="nav-button">
         <div class="view" id="view">
-          <i class="fa-solid fa-bars" onclick="handleViewClick()"></i>
+          <i
+            class="fa-solid fa-bars"
+            role="button"
+            tabindex="0"
+            aria-label="Open navigation menu"
+          ></i>
         </div>
         <div class="cancel" id="cancel">
-          <i class="fa-solid fa-xmark" onclick="handleCancelClick()"></i>
+          <i
+            class="fa-solid fa-xmark"
+            role="button"
+            tabindex="0"
+            aria-label="Close navigation menu"
+          ></i>
         </div>
       </div>
     </header>
@@ -80,23 +89,35 @@
     <!-- LEFT SIDEBAR ============================================================ -->
     <div class="left-sidebar">
       <div class="social">
-        <div title="Github" class="social-icon">
-          <a href="https://github.com/abhishekkg-in" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+        <div title="GitHub" class="social-icon">
+          <a
+            href="https://github.com/abhishekkg-in"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
-        <div title="Linkedin" class="social-icon">
-          <a href="https://www.linkedin.com/in/abhishekkg26/" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+        <div title="LinkedIn" class="social-icon">
+          <a
+            href="https://www.linkedin.com/in/abhishekkg26/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
         <div title="Instagram" class="social-icon">
-          <a href="https://www.instagram.com/abhishekkg_" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
-        <div title="Twitter" class="social-icon">
-          <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a
+            href="https://www.instagram.com/abhishekkg_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
       <div class="line"></div>
@@ -117,7 +138,7 @@
     </div>
 
     <!-- INFO ============================================================ -->
-    <section id="info" class="section">
+    <section id="info" class="section reveal">
       <div class="title">Hi, my name is</div>
       <div class="header">Abhishek Gupta</div>
       <!-- <h2>About Me</h2> -->
@@ -126,15 +147,15 @@
         development and a proven track record of delivering impactful solutions
       </p> -->
       <p class="para">
-        I am a software engineer with expertise in Python, GenAI, and full stack
-        development. Currently working at LTIMindtree, I have experience in
-        Vue.js, Spring Boot, and various tech stacks that I utilize to deliver
+        I am a software engineer with expertise in Python, GenAI, and full-stack
+        development. Currently working at <b>Q2</b>, I have experience in
+        Agents, RAG, Agentic AI, and various tech stacks that I utilize to deliver
         optimized solutions.
       </p>
     </section>
 
     <!-- ABOUT ============================================================ -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="header">
         <div class="start">01.</div>
         <div class="title">About Me</div>
@@ -147,7 +168,7 @@
             Innovative and results-driven Full-Stack Developer
             with expertise in building scalable applications and leveraging
             Generative AI to solve complex problems.
-            Skilled in JavaScript, Python, Java, SpringBoot, anddatascience, with a
+            Skilled in JavaScript, Python, Django, Spring Boot, and data science, with a
             proven ability to design and deploy sophisticated solutions.
             Passionate about continuous learning, adapting to emerging technologies,
             and delivering excellence in dynamic environments. 
@@ -174,7 +195,11 @@
           </ul> -->
         </div>
         <div class="image">
-          <img src="./data/me.jpg" alt="Image_Abhishek_Gupta" />
+          <img
+            src="./data/me.jpg"
+            alt="Image_Abhishek_Gupta"
+            loading="lazy"
+          />
         </div>
       </div>
 
@@ -184,7 +209,7 @@
     </section>
 
     <!-- SKILLS / TECHNOLOGY ============================================================ -->
-    <section id="technology" class="section">
+    <section id="technology" class="section reveal">
       <div class="header">
         <div class="start">02.</div>
         <div class="title">technologies I’ve been working with recently</div>
@@ -294,7 +319,7 @@
     </section>
 
     <!-- EXPERIENCE ============================================================ -->
-    <section id="experience" class="section">
+    <section id="experience" class="section reveal">
       <div class="header">
         <div class="start">03.</div>
         <div class="title">Where I've Worked</div>
@@ -302,38 +327,18 @@
       </div>
 
       <div class="work">
-        <div class="worklist">
-          <div class="company-item" onclick="showDescription('q2')">
-            <img
-              src="./data/q2.png"
-              alt="Q2 logo"
-              class="company-logo"
-            />
-            <span>Q2</span>
-          </div>
-          <div class="company-item" onclick="showDescription('ltimindtree')">
-            <img
-              src="./data/ltimindtree.png"
-              alt="LTIMindtree logo"
-              class="company-logo"
-            />
-            <span>LTIMindtree</span>
-          </div>
-          <div class="company-item" onclick="showDescription('mindtree')">
-            <img
-              src="./data/mindtree.png"
-              alt="Mindtree logo"
-              class="company-logo"
-            />
-            <span>Mindtree</span>
-          </div>
-        </div>
+        <div class="worklist" id="worklist"></div>
         <div class="work-description" id="work-description"></div>
+        <noscript>
+          <div class="work-description">
+            Enable JavaScript to view experience details.
+          </div>
+        </noscript>
       </div>
     </section>
 
     <!-- PROJECTS ============================================================ -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="header">
         <div class="start">04.</div>
         <div class="title">Projects</div>
@@ -342,8 +347,14 @@
 
       <div class="project-container">
 
-        <!-- WonderGenie -->
-        <div class="card">
+        <!-- WanderGenie -->
+        <div
+          class="card reveal js-card-link"
+          data-primary-url="https://github.com/abhishekkg-in/WanderGenie"
+          role="link"
+          tabindex="0"
+          aria-label="Open WanderGenie project"
+        >
           <div class="header-icons">
             <div class="left-icons">
               <i class="fa-regular fa-folder"></i>
@@ -351,7 +362,11 @@
             <div class="right-icons">
               <i
                 class="fa-brands fa-github icon"
-                onclick="redirect('https://github.com/abhishekkg-in/WanderGenie')"
+                data-url="https://github.com/abhishekkg-in/WanderGenie"
+                title="WanderGenie GitHub"
+                aria-label="WanderGenie GitHub"
+                role="button"
+                tabindex="0"
               ></i>
               <!-- <i
                 class="fa-solid fa-arrow-up-right-from-square icon"
@@ -369,11 +384,11 @@
           </div>
           <div class="technology-used">
             <ul>
-              <li>LLAMA-3-70b</li>
+              <li>Llama 3 70B</li>
               <li>RAG</li>
               <li>Flask</li>
               <li>Python</li>
-              <li>VectorDB</li>
+              <li>Vector DB</li>
               <li>SQLite</li>
               <li>Prompt-Engineering</li>
             </ul>
@@ -381,7 +396,13 @@
         </div>
 
         <!-- SecureFileShare -->
-        <div class="card">
+        <div
+          class="card reveal js-card-link"
+          data-primary-url="https://github.com/abhishekkg-in/SecureFileShare"
+          role="link"
+          tabindex="0"
+          aria-label="Open SecureFileShare project"
+        >
           <div class="header-icons">
             <div class="left-icons">
               <i class="fa-regular fa-folder"></i>
@@ -389,7 +410,11 @@
             <div class="right-icons">
               <i
                 class="fa-brands fa-github icon"
-                onclick="redirect('https://github.com/abhishekkg-in/SecureFileShare')"
+                data-url="https://github.com/abhishekkg-in/SecureFileShare"
+                title="SecureFileShare GitHub"
+                aria-label="SecureFileShare GitHub"
+                role="button"
+                tabindex="0"
               ></i>
               <!-- <i
                 class="fa-solid fa-arrow-up-right-from-square icon"
@@ -418,7 +443,13 @@
         </div>
 
         <!-- Task Tracker -->
-        <div class="card">
+        <div
+          class="card reveal js-card-link"
+          data-primary-url="https://github.com/abhishekkg-in/tasktrack"
+          role="link"
+          tabindex="0"
+          aria-label="Open TaskTracker project"
+        >
           <div class="header-icons">
             <div class="left-icons">
               <i class="fa-regular fa-folder"></i>
@@ -426,11 +457,19 @@
             <div class="right-icons">
               <i
                 class="fa-brands fa-github icon"
-                onclick="redirect('https://github.com/abhishekkg-in/tasktrack')"
+                data-url="https://github.com/abhishekkg-in/tasktrack"
+                title="TaskTracker GitHub"
+                aria-label="TaskTracker GitHub"
+                role="button"
+                tabindex="0"
               ></i>
               <i
                 class="fa-solid fa-arrow-up-right-from-square icon"
-                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+                data-url="https://tasktrack-frontend.onrender.com/"
+                title="TaskTracker Live Site"
+                aria-label="TaskTracker Live Site"
+                role="button"
+                tabindex="0"
               ></i>
             </div>
           </div>
@@ -449,13 +488,19 @@
               <li>Node.js</li>
               <li>Express.js</li>
               <li>MongoDB</li>
-              <li>Google-O-Auth</li>
+              <li>Google OAuth</li>
             </ul>
           </div>
         </div>
 
         <!-- Plan your Trip -->
-        <div class="card">
+        <div
+          class="card reveal js-card-link"
+          data-primary-url="https://github.com/abhishekkg-in/PlanMyTrip"
+          role="link"
+          tabindex="0"
+          aria-label="Open PlanYourTrip project"
+        >
           <div class="header-icons">
             <div class="left-icons">
               <i class="fa-regular fa-folder"></i>
@@ -463,16 +508,20 @@
             <div class="right-icons">
               <i
                 class="fa-brands fa-github icon"
-                onclick="redirect('https://github.com/abhishekkg-in/PlanMyTrip')"
+                data-url="https://github.com/abhishekkg-in/PlanMyTrip"
+                title="PlanYourTrip GitHub"
+                aria-label="PlanYourTrip GitHub"
+                role="button"
+                tabindex="0"
               ></i>
               <!-- <i class="fa-solid fa-arrow-up-right-from-square icon"></i> -->
             </div>
           </div>
-          <div class="header">PlanYoueTrip</div>
+          <div class="header">PlanYourTrip</div>
           <div class="description">
             Created a Trip booking site using MERN stack. <br />
             <b>Key Functionality: </b> route protection, authentication &
-            authorization, payment gaytway integration, on completion of booking
+            authorization, payment gateway integration, on completion of booking
             pdf generation with all details.
           </div>
           <div class="technology-used">
@@ -494,7 +543,7 @@
 
     
     <!-- CONTACT ============================================================ -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <div class="title">What's next?</div>
       <div class="header">Get In Touch</div>
       <div class="para">
@@ -503,9 +552,7 @@
         try my best to get back to you!
       </div>
       <div class="button-wrapper">
-        <div class="button">
-          <a href="mailto:abhishekravi718@gmail.com">Say Hello</a>
-        </div>
+        <a class="button" href="mailto:abhishekravi718@gmail.com">Say Hello</a>
       </div>
     </section>
 
