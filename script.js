@@ -47,7 +47,7 @@ const descriptions = {
             Software Engineer
             <span class="organization">@ LTIMindtree</span>
           </div>
-          <div class="date">September 2022 - Present</div>
+          <div class="date">September 2022 - April 2025</div>
 <div class="description">
   <ul>
     <li>
@@ -99,6 +99,29 @@ const descriptions = {
   </ul>
 </div>
   `,
+  q2: `
+  <div class="header">
+  Software Engineer
+  <span class="organization">@ Q2</span>
+</div>
+<div class="date">April 2025 - Present</div>
+<div class="description">
+  <ul>
+    <li>
+    Built AIDevAssistant, an LLM-powered developer assistant that analyzes
+    repository context to determine whether a requested feature already exists.
+    </li>
+    <li>
+    Designed retrieval and indexing workflows to surface relevant files,
+    APIs, and prior implementations, helping developers avoid duplicate work.
+    </li>
+    <li>
+    Improved engineering efficiency by delivering quick answers to
+    “is this already done?” queries with evidence-backed references.
+    </li>
+  </ul>
+</div>
+  `,
 };
 
 function showDescription(company) {
@@ -110,6 +133,10 @@ function showDescription(company) {
     .querySelector(`.company-item[onclick="showDescription('${company}')"]`)
     .classList.add("active");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showDescription("q2");
+});
 
 
 function handleViewClick(){
@@ -150,4 +177,3 @@ function redirect(url){
   window.open(url, "_blank")
   // window.location.href = url;
 }
-

@@ -303,50 +303,32 @@
 
       <div class="work">
         <div class="worklist">
-          <div
-            class="company-item active"
-            onclick="showDescription('ltimindtree')"
-          >
-            LTIMindtree
+          <div class="company-item" onclick="showDescription('q2')">
+            <img
+              src="./data/q2.png"
+              alt="Q2 logo"
+              class="company-logo"
+            />
+            <span>Q2</span>
+          </div>
+          <div class="company-item" onclick="showDescription('ltimindtree')">
+            <img
+              src="./data/ltimindtree.png"
+              alt="LTIMindtree logo"
+              class="company-logo"
+            />
+            <span>LTIMindtree</span>
           </div>
           <div class="company-item" onclick="showDescription('mindtree')">
-            Mindtree
+            <img
+              src="./data/mindtree.png"
+              alt="Mindtree logo"
+              class="company-logo"
+            />
+            <span>Mindtree</span>
           </div>
         </div>
-        <div class="work-description" id="work-description">
-          <div class="header">
-            Software Engineer
-            <span class="organization">@ LTIMindtree</span>
-          </div>
-          <div class="date">September 2022 - Present</div>
-          <div class="description">
-            <ul>
-              <li>
-                Built a Data Entity Extraction chatbot with Mistral LLM, reducing
-                manual effort by 70% and cutting costs.
-              </li>
-              <li>
-                Designed an intuitive frontend with Vue.js for operations engineers 
-                to analyze ITSM tickets using insightful charts and AI/ML recommendations. 
-                Enhanced operational efficiency with utilization notifications and backend 
-                integration via Spring Boot and REST APIs.
-                </li>
-                <li>
-                Developed a scalable and reliable notification system for a multi-tenant environment, 
-                leveraging Spring Boot, Kubernetes, and Docker. 
-                Designed a cohesive UI with Vue.js for manual notifications.
-                </li>
-                <li>
-                Developed a chatbot with document summarization, allowing users to upload images, 
-                PDFs, and DOCs for summarization and chat interactions.
-                </li>
-                <li>
-                Built a document comparator app to detect and highlight differences between 
-                two documents using GenAI and Spring Boot.
-                </li>
-            </ul>
-          </div>
-        </div>
+        <div class="work-description" id="work-description"></div>
       </div>
     </section>
 

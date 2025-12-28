@@ -599,6 +599,22 @@ html {
     cursor: pointer;
     border-left: 2px solid rgb(35 53 84);
     transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .company-logo {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.85;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   }
 
   .company-item:hover,
@@ -607,6 +623,12 @@ html {
         color: rgb(100 255 218);
         border-color: rgb(100 255 218);
         border-radius: 1px;
+  }
+
+  .company-item:hover .company-logo,
+  .company-item.active .company-logo {
+    filter: grayscale(0%);
+    opacity: 1;
   }
 
   #experience .work-description {
