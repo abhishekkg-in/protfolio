@@ -82,7 +82,7 @@ const experiences = [
     company: "Mindtree",
     role: "MERN Stack Intern",
     dates: "March - June 2022",
-    logo: "./data/mindtree.png",
+    logo: "./data/mindtree.jpeg",
     bullets: [
       "Built a scalable e-commerce platform with product catalog, user authentication, and secure payment integration using Stripe API.",
       "Developed a real-time task management app with role-based access control and dynamic dashboards.",
