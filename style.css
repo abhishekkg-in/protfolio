@@ -305,9 +305,10 @@ html {
 
   #about .header .line {
     margin-top: 10px;
-    width: 60%;
     margin-left: 20px;
     border-top: 2px solid #233554;
+    flex: 1;
+    min-width: 20px;
   }
 
   #about .para-image{
@@ -410,9 +411,10 @@ html {
 
   #technology .header .line {
     margin-top: 10px;
-    width: 50%;
     margin-left: 20px;
     border-top: 2px solid #233554;
+    flex: 1;
+    min-width: 20px;
   }
 
   #technology .technology{
@@ -455,9 +457,10 @@ html {
 
   #projects .header .line {
     margin-top: 10px;
-    width: 50%;
     margin-left: 20px;
     border-top: 2px solid #233554;
+    flex: 1;
+    min-width: 20px;
   }
 
   #projects .project-container{
@@ -583,9 +586,10 @@ html {
 
   #experience .header .line {
     margin-top: 10px;
-    width: 50%;
     margin-left: 20px;
     border-top: 2px solid #233554;
+    flex: 1;
+    min-width: 20px;
   }
 
   #experience .work{
@@ -980,7 +984,7 @@ html {
   }
 
   #about .header .line {
-    width: 55%;
+    width: auto;
   }
 
   #about .para {
@@ -1087,7 +1091,7 @@ html {
   }
 
   #experience .header .line {
-    width: 40%;
+    width: auto;
   }
 
   #experience .work {
